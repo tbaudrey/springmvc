@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/springmvc"/>
+<Context path="/springmvc">
+  <Resource auth="Container" driverClassName="org.apache.derby.jdbc.ClientDriver" maxActive="20" maxIdle="10" maxWait="-1" name="springmvc" password="springmvc" type="javax.sql.DataSource" url="jdbc:derby://localhost:1527/springmvc" username="springmvc"/>
+</Context>

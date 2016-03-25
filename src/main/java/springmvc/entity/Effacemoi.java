@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package streaming.entity;
+package springmvc.entity;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -23,6 +23,39 @@ public class Effacemoi implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String nom;
+    private String prenom;
+
+    public Effacemoi(Long id, String nom, String prenom) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
+    public Effacemoi(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+    
+    public Effacemoi() {
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+    
     public Long getId() {
         return id;
     }

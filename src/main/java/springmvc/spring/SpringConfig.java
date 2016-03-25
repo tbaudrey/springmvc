@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package streaming.spring;
+package springmvc.spring;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -28,8 +28,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 //@SpringBootApplication
 //@EnableAutoConfiguration
-@ComponentScan(basePackages = "streaming") 
-@EnableJpaRepositories(basePackages = "streaming")
+@ComponentScan(basePackages = "springmvc") 
+@EnableJpaRepositories(basePackages = "springmvc")
 @EnableWebMvc
 public class SpringConfig extends WebMvcConfigurerAdapter{
 
