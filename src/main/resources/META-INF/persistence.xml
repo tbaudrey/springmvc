@@ -4,6 +4,14 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <!--<non-jta-data-source>springmvc</non-jta-data-source>-->
     <class>springmvc.entity.Effacemoi</class>
+    <class>springmvc.entity.Episode</class>
+    <class>springmvc.entity.Film</class>
+    <class>springmvc.entity.Genre</class>
+    <class>springmvc.entity.Lien</class>
+    <class>springmvc.entity.Pays</class>
+    <class>springmvc.entity.Realisateur</class>
+    <class>springmvc.entity.Saison</class>
+    <class>springmvc.entity.Serie</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/springmvc"/>

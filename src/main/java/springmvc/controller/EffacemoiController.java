@@ -61,9 +61,7 @@ public class EffacemoiController {
     @RequestMapping(value = "detail/{idDuRecord}", method = RequestMethod.GET)
     public String detail(@PathVariable(value = "idDuRecord") long monId){
         
-        System.out.println("********************************************************");
         System.out.println(monId);
-        System.out.println("********************************************************");
         return null;
     }
     
